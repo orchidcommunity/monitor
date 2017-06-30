@@ -19,3 +19,33 @@ This is the monitor package for Orchid CMS.
 Pull in the package through Composer.
 
 Run `composer require orchid/monitor` to get the latest stable version of the package.
+
+## Usage
+
+```php
+
+$monitor = new Monitor();
+
+// uname,webserver,phpVersion,cpu
+$monitor->info();
+
+// temperature,uptime
+$monitor->hardware();
+
+// oneMin,fiveMins,fifteenMins
+$monitor->loadAverage();
+
+// total,used,buffers,cache
+$monitor->memory();
+
+// down,up
+$monitor->network();
+
+// array
+$monitor->storage();
+```
+
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
