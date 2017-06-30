@@ -23,7 +23,6 @@ Run `composer require orchid/monitor` to get the latest stable version of the pa
 ## Usage
 
 ```php
-
 $monitor = new Monitor();
 
 // uname,webserver,phpVersion,cpu
