@@ -10,14 +10,13 @@ class MonitorTest extends TestCase
      */
     public $monitor;
 
-
     public function setUp()
     {
         $this->monitor = new Monitor();
     }
 
     /**
-     * test
+     * test.
      */
     public function test_is_info()
     {
@@ -30,7 +29,7 @@ class MonitorTest extends TestCase
     }
 
     /**
-     * test
+     * test.
      */
     public function test_is_hardware()
     {
@@ -41,7 +40,7 @@ class MonitorTest extends TestCase
     }
 
     /**
-     * test
+     * test.
      */
     public function test_is_loadAverage()
     {
@@ -53,7 +52,7 @@ class MonitorTest extends TestCase
     }
 
     /**
-     * test
+     * test.
      */
     public function test_is_memory()
     {
@@ -66,7 +65,7 @@ class MonitorTest extends TestCase
     }
 
     /**
-     * test
+     * test.
      */
     public function test_is_network()
     {
@@ -77,7 +76,7 @@ class MonitorTest extends TestCase
     }
 
     /**
-     * test
+     * test.
      */
     public function test_is_storage()
     {
@@ -85,5 +84,4 @@ class MonitorTest extends TestCase
 
         $this->assertEquals(true, !is_null($storage));
     }
-
 }
