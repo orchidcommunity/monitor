@@ -118,7 +118,6 @@ class Monitor
      */
     public function memory() : stdClass
     {
-        //$mem_free = (int)shell_exec("free -m | awk '/buffers\/cache/ {print $3}'");
         $memTotal = (int) shell_exec("free -m | awk '/Mem/ {print $2}'");
         $memTotal = ($memTotal) ? $memTotal : 1;
         $usedAct = (int) shell_exec("free | awk '/buffers\/cache/ {print $3}'");
