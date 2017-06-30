@@ -1,0 +1,35 @@
+{
+  "name": "orchid/monitor",
+  "description": "Monitor will show you current information about your system",
+  "type": "library",
+  "keywords": [
+    "systems",
+    "monitor",
+    "information"
+  ],
+  "license": "MIT",
+  "homepage": "https://theorchid.github.io/",
+  "support": {
+    "issues": "https://github.com/theOrchid/Platform/issues",
+    "source": "https://github.com/theOrchid/Platform"
+  },
+  "authors": [
+    {
+      "name": "Alexandr Chernyaev",
+      "email": "bliz48rus@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Orchid\\": "src/Orchid"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
