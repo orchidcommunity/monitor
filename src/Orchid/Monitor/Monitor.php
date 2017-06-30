@@ -47,12 +47,12 @@ class Monitor
 
         $sapi_type = php_sapi_name();
         if (substr($sapi_type, 0, 3) == 'cgi') {
-            $data->webserver = $this->server['SERVER_NAME'] . ' (' . $serverAddr . ') - ' . $this->server['SERVER_SOFTWARE'];
+            $data->webserver = $this->server['SERVER_NAME'].' ('.$serverAddr.') - '.$this->server['SERVER_SOFTWARE'];
         } else {
             $data->webserver = 'cgi';
         }
 
-        $data->phpVersion = 'PHP/' . $phpVersion[0] . '.' . $phpVersion[1] . '.' . $phpVersion[1];
+        $data->phpVersion = 'PHP/'.$phpVersion[0].'.'.$phpVersion[1].'.'.$phpVersion[1];
         $data->cpu = $name[1];
 
         return $data;
@@ -92,7 +92,6 @@ class Monitor
     {
         $output = shell_exec('uptime');
         $loadavg = explode(' ', substr($output, strpos($output, 'load average:') + 14));
-
 
         // data object
         $data = new stdClass();
@@ -179,7 +178,7 @@ class Monitor
      */
     public function network() : stdClass
     {
-        $output = shell_exec('sh ' . __DIR__ . '/transfer_rate.sh');
+        $output = shell_exec('sh '.__DIR__.'/transfer_rate.sh');
         $rates = explode(' ', $output);
         // data object
         $data = new stdClass();
