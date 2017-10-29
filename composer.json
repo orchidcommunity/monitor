@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Orchid\\Orchid\\": "src/"
+      "Orchid\\Monitor\\": "src/"
     }
   },
   "extra": {
