@@ -6,12 +6,12 @@ return [
     'description' => 'Información del estado del servidor',
     'disabled'    => 'El sistema operativo o la configuración de PHP no son compatibles con el monitoreo',
 
-    'Hardware'         => [
+    'Hardware' => [
         'Title'             => 'Hardware',
         'Uptime'            => 'Tiempo de actividad',
         'Board Temperature' => 'Temperatura del tablero',
     ],
-    'Network'          => [
+    'Network' => [
         'Title' => 'Red',
         'Down'  => 'Abajo',
         'Up'    => 'Arriba',
@@ -20,14 +20,14 @@ return [
         'Title' => 'Carga promedio del CPU',
         'min'   => 'Min',
     ],
-    'Memory'           => [
+    'Memory' => [
         'Title'   => 'Memoria',
         'Used'    => 'Usado',
         'Cache'   => 'Cache',
         'Buffers' => 'Reguladores',
         'Free'    => 'Gratis',
     ],
-    'Storage'          => [
+    'Storage' => [
         'Title'      => 'Almacenamiento',
         'FILESYSTEM' => 'SISTEMA DE ARCHIVOS',
         'AVAILABLE'  => 'DISPONIBLE',
@@ -35,7 +35,7 @@ return [
         'USED'       => 'USADO',
         'MOUNTED'    => 'MONTADO',
     ],
-    'Info'             => [
+    'Info' => [
         'Title'       => 'Información',
         'Linux'       => 'Linux',
         'Web Server'  => 'Servidor web',
