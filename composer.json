@@ -30,6 +30,13 @@
       "Orchid\\Orchid\\": "src/"
     }
   },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Orchid\\Monitor\\MonitorServiceProvider"
+      ]
+    }
+  },
   "minimum-stability": "stable",
   "prefer-stable": true
 }
