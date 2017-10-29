@@ -5,6 +5,11 @@
 [![Latest Unstable Version](https://poser.pugx.org/orchid/monitor/v/unstable.svg)](https://packagist.org/packages/orchid/monitor)
 [![License](https://poser.pugx.org/orchid/monitor/license.svg)](https://packagist.org/packages/orchid/monitor)
 
+
+
+![monitor](https://orchid.software/img/cms/4.png)
+
+
 This is the monitor package for Orchid CMS.
 
  * Board temperature

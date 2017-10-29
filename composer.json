@@ -8,7 +8,7 @@
     "information"
   ],
   "license": "MIT",
-  "homepage": "https://theorchid.github.io/",
+  "homepage": "https://orchid.software",
   "support": {
     "issues": "https://github.com/theOrchid/Platform/issues",
     "source": "https://github.com/theOrchid/Platform"
@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Orchid\\": "src/Orchid"
+      "Orchid\\Orchid\\": "src/"
     }
   },
   "minimum-stability": "stable",
