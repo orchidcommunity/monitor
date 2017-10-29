@@ -2,13 +2,12 @@
 
 namespace Orchid\Monitor;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Orchid\Platform\Kernel\Dashboard;
-use Illuminate\Support\Facades\View;
 
 class MonitorServiceProvider extends ServiceProvider
 {
-
     protected $defer = false;
 
     /**
@@ -16,8 +15,8 @@ class MonitorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(  realpath(__DIR__ . '/../resources/views'), 'orchid/monitor');
-        $this->loadTranslationsFrom(realpath(__DIR__ . '/../resources/lang'), 'orchid/monitor');
+        $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'orchid/monitor');
+        $this->loadTranslationsFrom(realpath(__DIR__.'/../resources/lang'), 'orchid/monitor');
         $this->loadRoutesFrom(realpath(__DIR__.'/../routes/route.php'));
 
         $dashboard = $this->app->make(Dashboard::class);
@@ -29,8 +28,7 @@ class MonitorServiceProvider extends ServiceProvider
             ]],
         ]);
 
-        View::composer('dashboard::layouts.dashboard', function () use ($dashboard){
-
+        View::composer('dashboard::layouts.dashboard', function () use ($dashboard) {
             $dashboard->menu->add('Systems', [
                 'slug'       => 'monitor',
                 'icon'       => 'fa fa-television',
@@ -39,9 +37,6 @@ class MonitorServiceProvider extends ServiceProvider
                 'permission' => 'dashboard.systems.monitor',
                 'sort'       => 502,
             ]);
-
         });
-
     }
-
 }

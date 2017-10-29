@@ -6,12 +6,12 @@ return [
     'description' => 'Server Status Information',
     'disabled'    => 'The operating system or PHP settings are not supported by the monitor',
 
-    'Hardware'         => [
+    'Hardware' => [
         'Title'             => 'Hardware',
         'Uptime'            => 'Uptime',
         'Board Temperature' => 'Board Temperature',
     ],
-    'Network'          => [
+    'Network' => [
         'Title' => 'Network',
         'Down'  => 'Down',
         'Up'    => 'Up',
@@ -20,14 +20,14 @@ return [
         'Title' => 'CPU Load Average',
         'min'   => 'min',
     ],
-    'Memory'           => [
+    'Memory' => [
         'Title'   => 'Memory',
         'Used'    => 'Used',
         'Cache'   => 'Cache',
         'Buffers' => 'Buffers',
         'Free'    => 'Free',
     ],
-    'Storage'          => [
+    'Storage' => [
         'Title'      => 'Storage',
         'FILESYSTEM' => 'FILESYSTEM',
         'AVAILABLE'  => 'AVAILABLE',
@@ -35,7 +35,7 @@ return [
         'USED'       => 'USED',
         'MOUNTED'    => 'MOUNTED',
     ],
-    'Info'             => [
+    'Info' => [
         'Title'       => 'Info',
         'Linux'       => 'Linux',
         'Web Server'  => 'Web Server',

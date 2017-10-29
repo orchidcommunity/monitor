@@ -6,12 +6,12 @@ return [
     'description' => '服务器状态信息',
     'disabled'    => '显示器不支持操作系统或PHP设置',
 
-    'Hardware'         => [
+    'Hardware' => [
         'Title'             => '硬件',
         'Uptime'            => '正常运行时间',
         'Board Temperature' => '板温度',
     ],
-    'Network'          => [
+    'Network' => [
         'Title' => '网络',
         'Down'  => '下',
         'Up'    => '向上',
@@ -20,14 +20,14 @@ return [
         'Title' => 'CPU负载平均',
         'min'   => '分',
     ],
-    'Memory'           => [
+    'Memory' => [
         'Title'   => '记忆',
         'Used'    => '用过的',
         'Cache'   => '高速缓存',
         'Buffers' => '缓冲区',
         'Free'    => '自由',
     ],
-    'Storage'          => [
+    'Storage' => [
         'Title'      => '存储',
         'FILESYSTEM' => '文件系统',
         'AVAILABLE'  => '可用',
@@ -35,7 +35,7 @@ return [
         'USED'       => '用过的',
         'MOUNTED'    => '安装',
     ],
-    'Info'             => [
+    'Info' => [
         'Title'       => '信息',
         'Linux'       => 'Linux',
         'Web Server'  => '网络服务器',
