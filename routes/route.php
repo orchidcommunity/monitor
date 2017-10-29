@@ -10,5 +10,4 @@ Route::group([
             'as'   => 'dashboard.systems.monitor',
             'uses' => 'MonitorController@index',
         ]);
-
     });

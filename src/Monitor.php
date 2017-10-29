@@ -135,11 +135,11 @@ class Monitor
         $usedAct_p = 100 * ($usedAct / $totalAct);
         // data object
         $data = (object) [
-            'total'   => (object) [
+            'total' => (object) [
                 'pretty' => StringHelpers::prettyMemory($memTotal),
                 'actual' => $totalAct,
             ],
-            'used'    => (object) [
+            'used' => (object) [
                 'pretty'     => (string) round($usedAct_p, 2),
                 'percentage' => $usedAct_p,
                 'actual'     => $usedAct,
@@ -149,12 +149,12 @@ class Monitor
                 'percentage' => $buffersPercent,
                 'actual'     => $buffers,
             ],
-            'cache'   => (object) [
+            'cache' => (object) [
                 'pretty'     => (string) round($cachePercent, 2),
                 'percentage' => $cachePercent,
                 'actual'     => $cache,
             ],
-            'free'    => (object) [
+            'free' => (object) [
                 'pretty'     => (string) round($free_p, 2),
                 'percentage' => $free_p,
                 'actual'     => $free,
