@@ -24,7 +24,7 @@ class MonitorServiceProvider extends ServiceProvider
         $dashboard->permission->registerPermissions([
             'Systems' => [[
                 'slug'        => 'dashboard.systems.monitor',
-                'description' => trans('cms::permission.systems.monitor'),
+                'description' => trans('orchid/monitor::monitor.Monitor'),
             ]],
         ]);
 

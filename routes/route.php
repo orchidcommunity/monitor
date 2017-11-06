@@ -1,7 +1,7 @@
 <?php
 
 Route::group([
-    'middleware' => ['web', 'dashboard', 'access'],
+    'middleware' => config('platform.middleware.private'),
     'prefix'     => 'dashboard/systems',
     'namespace'  => 'Orchid\Monitor',
 ],
