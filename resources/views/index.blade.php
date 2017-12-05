@@ -9,7 +9,7 @@
 
 
     <!-- main content  -->
-    <section class="wrapper-xl bg-white col-md-7 col-xs-12">
+    <section class="wrapper-xl bg-white" style="max-width: 800px;">
 
 
         <div class="row">
