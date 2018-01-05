@@ -2,7 +2,7 @@
 
 Route::group([
     'middleware' => config('platform.middleware.private'),
-    'prefix'     => 'dashboard/systems',
+    'prefix'     => \Orchid\Platform\Kernel\Dashboard::prefix('/systems'),
     'namespace'  => 'Orchid\Monitor',
 ],
     function (\Illuminate\Routing\Router $router) {
