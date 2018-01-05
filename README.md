@@ -23,7 +23,7 @@ This is the monitor package for Orchid CMS.
 
 Pull in the package through Composer.
 
-Run `composer require orchid/monitor` to get the latest stable version of the package.
+Run `composer require orchidcommunity/monitor` to get the latest stable version of the package.
 
 ## Usage
 
