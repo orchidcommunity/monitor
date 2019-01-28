@@ -7,7 +7,7 @@
 
 
 
-![monitor](https://orchid.software/img/cms/4.png)
+![monitor](https://user-images.githubusercontent.com/5102591/51838083-61e28a80-2316-11e9-941c-a0e785cdf1c5.png)
 
 
 This is the monitor package for Orchid CMS.
