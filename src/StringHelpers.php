@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Orchid\Monitor;
 
 class StringHelpers
@@ -11,6 +13,7 @@ class StringHelpers
      * @param int $seconds
      *
      * @return string
+     * @throws \Exception
      */
     public static function secondsToTime(int $seconds) : string
     {
@@ -30,8 +33,6 @@ class StringHelpers
      */
     public static function prettyMemory(int $total) : string
     {
-        $total = (int) $total;
-
         if ($total > 999) {
             $total = round($total / 1024, 2);
 
